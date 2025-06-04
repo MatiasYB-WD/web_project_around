@@ -1,0 +1,24 @@
+.profile{
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: row;
+    margin: auto;
+}
+
+.profile__image{
+    color:#000000;
+}
+.profile__text{
+    display:flex;
+    flex-direction: column;
+}
+
+.profile__button{
+    border: 1px solid #ffffff;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/lapiz.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}

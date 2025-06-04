@@ -1,4 +1,4 @@
 let title = document.querySelector(".title")
-let subtitle = document.querySelector(".title_mini")
-let boton = document.querySelector(".button")
+let subtitle = document.querySelector(".subtitle")
+let line = document.querySelector(".line")
 

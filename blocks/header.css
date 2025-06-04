@@ -1,3 +1,23 @@
 .header{
     display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding: 45px 0 41px;
+}
+
+  .header__title{
+ /*    display: flex;
+    flex-direction: row; */
+    max-width: 173px;
+}
+
+  .line{
+  border: none;
+  height: 1px;
+  background-color: #545454;
+  width: 100%;
+  max-width: 1280px;
 }

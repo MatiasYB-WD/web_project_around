@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="html, css, js" />
+    <meta
+      name="description"
+      content="Un paseo por varios paisajes de America del Norte"
+    />
     <meta name="author" content="Matias Yañez" />
-    <title>Arround the U.S.</title>
-    <link rel="stylesheet" href="./pages/index.css">
-</head>
-<body>
-<div class="page">
-<header class="header">
-<h2 class="title">Arround</h2>
-<h4 class="title subtitle">The U.S.</h4>
-</header>
-<main class="cotent">
-    <div class="profile">
+    <title>Alrededor de los Estados Unidos</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <!-- 
 
+    block : una sola palabra o dos pero separadas con guion del medio : "page" , "header" , "main-header"
+    elementos : dentro del bloque y son dos palabras separadas con doble guion bajo : "page__title" , "main-header__title"
+    
+    -->
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title">
+          <img src="./images/Vector.png" alt="Logo" class="header__logo" />
+        </h1>
+        <!-- <div class="header__title">
+        <h2 class="header-title title">Arround</h2>
+        <h4 class="header-title subtitle">The U.S.</h4>
+    </div>-->
+      </header>
+      <hr class="line" />
+      <main class="main">
+        <section class="profile">
+          <img
+            src="./images/Avatar.jpg"
+            alt="Imagen de Avatar"
+            class="profile__image"
+          />
+          <div class="profile__text">
+            <p class="profile__name">Jacques Cousteau</p>
+            <p class="profile__profesion">Explorador</p>
+          </div>
+          <button type="button" class="profile__button"></button>
+          <button class="button"></button>
+        </section>
+        <section class="element"></section>
+        </main>
+      <script src="index.js"></script>
     </div>
-    <div class="element">
-        
-    </div>
-    <button class="button"></button>
-</main>
-<script src="index.js"></script>
-</div>
-</body>
+  </body>
 </html>
