@@ -1,0 +1,48 @@
+.elements {
+}
+
+.elements__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 880px;
+  margin: auto;
+  gap: 17px;
+  padding: 0;
+}
+
+.elements__card {
+  background-color: #ffffff;
+  max-width: 282px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.elements__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  padding-left: 21px;
+  padding-right: 15px;
+}
+
+ .elements__like {
+background-image: url(../images/icon_heart.jpg);
+background-position: center;
+background-size: cover;
+width: 21px;
+height: 19px;
+border: none;
+background-color: transparent;
+outline: none;
+}

@@ -15,7 +15,7 @@
   <body>
     <!-- 
 
-    block : una sola palabra o dos pero separadas con guion del medio : "page" , "header" , "main-header"
+    block : una sola palabra o dos pero separadas con guion medio : "page" , "header" , "main-header"
     elementos : dentro del bloque y son dos palabras separadas con doble guion bajo : "page__title" , "main-header__title"
     
     -->
@@ -24,10 +24,6 @@
         <h1 class="header__title">
           <img src="./images/Vector.png" alt="Logo" class="header__logo" />
         </h1>
-        <!-- <div class="header__title">
-        <h2 class="header-title title">Arround</h2>
-        <h4 class="header-title subtitle">The U.S.</h4>
-    </div>-->
       </header>
       <hr class="line" />
       <main class="main">
@@ -38,14 +34,81 @@
             class="profile__image"
           />
           <div class="profile__text">
-            <p class="profile__name">Jacques Cousteau</p>
+            <div class="profile__info">
+              <p class="profile__name">Jacques Cousteau</p>
+              <buton type="buton" class="profile__buton"></buton>
+            </div>
             <p class="profile__profesion">Explorador</p>
           </div>
-          <button type="button" class="profile__button"></button>
-          <button class="button"></button>
+          <buton type="buton" class="profile__add-buton">+</buton>
         </section>
-        <section class="element"></section>
-        </main>
+        <section class="elements">
+          <ul class="elements__cards">
+            <li class="elements__card">
+              <img
+                src="images/around1.jpg"
+                alt="paisaje 1"
+                class="elements__image"
+              />
+              <p class="elements__title">
+                Valle de Yosemite <button class="elements__like"></button>
+              </p>
+            </li>
+            <li class="elements__card">
+              <img
+                src="images/around2.jpg"
+                alt="paisaje 2"
+                class="elements__image"
+              />
+              <p class="elements__title">
+                Lago Louise <button class="elements__like"></button>
+              </p>
+            </li>
+            <li class="elements__card">
+              <img
+                src="images/around3.jpg"
+                alt="paisaje 3"
+                class="elements__image"
+              />
+              <p class="elements__title">
+                Montañas Calvas <button class="elements__like"></button>
+              </p>
+            </li>
+            <li class="elements__card">
+              <img
+                src="images/around4.jpg"
+                alt="paisaje 4"
+                class="elements__image"
+              />
+              <p class="elements__title">
+                Latemar <button class="elements__like"></button>
+              </p>
+            </li>
+            <li class="elements__card">
+              <img
+                src="images/around5.jpg"
+                alt="paisaje 5"
+                class="elements__image"
+              />
+              <p class="elements__title">
+                Vanois National... <button class="elements__like"></button>
+              </p>
+            </li>
+            <li class="elements__card">
+              <img
+                src="images/around6.jpg"
+                alt="paisaje 6"
+                class="elements__image"
+              />
+              <p class="elements__title">
+                Lago di Braies <button class="elements__like"></button>
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <div class="popup"></div>
+      <footer class="footer"></footer>
       <script src="index.js"></script>
     </div>
   </body>
