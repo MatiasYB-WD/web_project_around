@@ -1,0 +1,14 @@
+.footer {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #545454;
+}
+
+.footer__description {
+  margin: auto;
+  max-width: 880px;
+  padding-top: 67px;
+  padding-bottom: 60px;
+}
