@@ -43,7 +43,7 @@
     line-height: 100%;
     margin: 0;
 }
-.profile__buton{
+.profile__button{
     border: 1px solid #ffffff;
     width: 24px;
     height: 24px;
@@ -55,7 +55,7 @@
     margin-left: 18px;
 }
 
-.profile__add-buton{
+.profile__add-button{
     color: #ffffff;
     width: 150px;
     height: 50px;

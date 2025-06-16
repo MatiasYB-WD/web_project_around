@@ -15,8 +15,10 @@
   <body>
     <!-- 
 
-    block : una sola palabra o dos pero separadas con guion medio : "page" , "header" , "main-header"
-    elementos : dentro del bloque y son dos palabras separadas con doble guion bajo : "page__title" , "main-header__title"
+    block : una sola palabra o dos pero 
+    separadas con guion medio : "page" , "header" , "main-header"
+    elementos : dentro del bloque y son dos palabras separadas 
+    con doble guion bajo : "page__title" , "main-header__title"
     
     -->
     <div class="page">
@@ -36,11 +38,11 @@
           <div class="profile__text">
             <div class="profile__info">
               <p class="profile__name">Jacques Cousteau</p>
-              <buton type="buton" class="profile__buton"></buton>
+              <button type="button" class="profile__button"></button>
             </div>
             <p class="profile__profesion">Explorador</p>
           </div>
-          <buton type="buton" class="profile__add-buton">+</buton>
+          <button type="button" class="profile__add-button">+</button>
         </section>
         <section class="elements">
           <ul class="elements__cards">
@@ -107,9 +109,21 @@
           </ul>
         </section>
       </main>
-      <div class="popup"></div>
+      <div class="popup">
+        <div class="popup__overlay">
+          <button class="popup__close">X</button>
+        </div>
+        <div class="popup__content">
+          <form action="" class="popup__form">
+            <input type="text" value="name">
+            <input type="button" value="guardar">
+          </form>
+        </div>
+      </div>
       <footer class="footer">
-        <p class="footer__description">© 2025 Matias Yañez by TT - Around The U.S. </p>
+        <p class="footer__description">
+          © 2025 Matias Yañez by TT - Around The U.S.
+        </p>
       </footer>
       <script src="index.js"></script>
     </div>
