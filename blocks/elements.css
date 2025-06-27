@@ -1,6 +1,3 @@
-.elements {
-}
-
 .elements__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -19,7 +16,6 @@
   font-family: Inter;
   font-weight: 900;
   font-size: 24px;
-  line-height: 100%;
 }
 
 .elements__title {
@@ -31,18 +27,29 @@
   font-family: Inter;
   font-weight: 900;
   font-size: 24px;
-  line-height: 100%;
   padding-left: 21px;
   padding-right: 15px;
 }
 
- .elements__like {
-background-image: url(../images/icon_heart.jpg);
-background-position: center;
-background-size: cover;
-width: 21px;
-height: 19px;
-border: none;
-background-color: transparent;
-outline: none;
+.elements__like {
+  background-image: url(../images/icon_heart.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 21px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 320px) {
+  .elements__cards {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 282px;
+    gap: 20px;
+    padding: 0;
+  }
 }

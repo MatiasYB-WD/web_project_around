@@ -110,19 +110,24 @@
         </section>
       </main>
       <div class="popup">
-        <div class="popup__overlay">
-          <button class="popup__close">X</button>
-        </div>
+        <div class="popup__overlay"></div>
         <div class="popup__content">
+          <button class="popup__close">+</button>
           <form action="" class="popup__form">
-            <input type="text" value="name">
-            <input type="button" value="guardar">
+            <p class="popup__title">Editar perfil</p>
+            <input type="text" placeholder="Nombre" class="popup__name" />
+            <input
+              type="text"
+              placeholder="Acerca de Mi"
+              class="popup__input"
+            />
+            <button type="button" class="popup__save">Guardar</button>
           </form>
         </div>
       </div>
       <footer class="footer">
         <p class="footer__description">
-          © 2025 Matias Yañez by TT - Around The U.S.
+          © 2025 Matias Yañez - Around The U.S.
         </p>
       </footer>
       <script src="index.js"></script>
