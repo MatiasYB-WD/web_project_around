@@ -1,15 +1,30 @@
 //comentarios en js
 
 const button= document.querySelector(".profile__button");
-const popupNode= document.querySelector(".popup");
-const popupCloseButton= document.querySelector(".popup__close")
+const popup= document.querySelector(".popup");
+const popupCloseButton= document.querySelector(".popup__close");
+const form= document.querySelector(".popup__form");
+const profileName= document.querySelector(".profile__name");
+const profileProfesion= document.querySelector(".profile__profesion");
+const popupName= document.querySelector(".popup__name");
+const popupInput= document.querySelector(".popup__input");
 
 button.addEventListener("click", function(){
-    popupNode.classList.add("popup__show");
+    popup.classList.add("popup__show");
 }
+)
+function closePopup(){
+    popup.classList.remove("popup__show");
+}
+
+popupCloseButton.addEventListener("click", closePopup
 )
 
-popupCloseButton.addEventListener("click", function(){
-    popupNode.classList.remove("popup__show");
+function submitForm(evt){
+    evt.preventDefault()
+    profileName.textContent = popupName.value;
+    profileProfesion.textContent = popupInput.value;
+    closePopup()
 }
-)
+
+form.addEventListener("submit", submitForm);

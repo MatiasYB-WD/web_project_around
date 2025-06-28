@@ -23,6 +23,16 @@
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 920px) {
+  .header {
+    max-width: 800px;
+  }
+  
+  .line{
+    max-width: 800px;
+}
+}
+  
 @media screen and (max-width: 768px) {
   .header {
     max-width: 768px;

@@ -70,10 +70,13 @@
   font-size: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
+.profile__text {
+  max-width: 300px;
+}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 620px) {
   .profile {
     flex-direction: column;
     max-width: 320px;
