@@ -62,12 +62,18 @@
 }
 
 .popup__name {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
   margin-bottom: 29px;
   border: none;
   border-bottom: 1px solid #000000;
 }
 
 .popup__input {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
   margin-bottom: 48px;
   border: none;
   border-bottom: 1px solid #000000;
@@ -89,7 +95,7 @@
 
 @media screen and (max-width: 420px) {
   .popup__close {
-   top: -65px;
-   right: 0;
+    top: -65px;
+    right: 0;
   }
 }
