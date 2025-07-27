@@ -8,11 +8,17 @@ const profileName= document.querySelector(".profile__name");
 const profileProfesion= document.querySelector(".profile__profesion");
 const popupName= document.querySelector(".popup__name");
 const popupInput= document.querySelector(".popup__input");
+const addButton= document.querySelector(".profile__add-button");
+const popupPlace= document.querySelector(".popup-place");
+const popupClosePlaceButton= document.querySelector(".popup-place__close");
+const popupPlaceName= document.querySelector(".popup-place__name");
+const popupPlaceLink= document.querySelector(".poppu-place__link");
 
 button.addEventListener("click", function(){
     popup.classList.add("popup__show");
 }
 )
+
 function closePopup(){
     popup.classList.remove("popup__show");
 }
@@ -28,3 +34,14 @@ function submitForm(evt){
 }
 
 form.addEventListener("submit", submitForm);
+
+addButton.addEventListener("click", function (){
+    popupPlace.classList.add("popup-place__show");
+}
+)
+
+function closePlacePopup(){
+    popupPlace.classList.remove("popup-place__show");
+}
+
+popupClosePlaceButton.addEventListener("click", closePlacePopup);

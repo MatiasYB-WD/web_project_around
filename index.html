@@ -47,15 +47,16 @@
         <section class="elements">
           <ul class="elements__cards">
             <li class="elements__card">
+             <button type="button" class="elements__trash"></button>
               <img
                 src="images/around1.jpg"
                 alt="paisaje 1"
                 class="elements__image"
               />
               <div class="elements__description">
-              <p class="elements__title">
-                Valle de Yosemite
-              </p><button class="elements__like"></button></div>
+                <p class="elements__title">Valle de Yosemite</p>
+                <button class="elements__like"></button>
+              </div>
             </li>
             <li class="elements__card">
               <img
@@ -64,9 +65,9 @@
                 class="elements__image"
               />
               <div class="elements__description">
-              <p class="elements__title">
-                Lago Louise 
-              </p><button class="elements__like"></button></div>
+                <p class="elements__title">Lago Louise</p>
+                <button class="elements__like"></button>
+              </div>
             </li>
             <li class="elements__card">
               <img
@@ -75,9 +76,9 @@
                 class="elements__image"
               />
               <div class="elements__description">
-              <p class="elements__title">
-                Montañas Calvas
-              </p><button class="elements__like"></button></div>
+                <p class="elements__title">Montañas Calvas</p>
+                <button class="elements__like"></button>
+              </div>
             </li>
             <li class="elements__card">
               <img
@@ -86,9 +87,9 @@
                 class="elements__image"
               />
               <div class="elements__description">
-              <p class="elements__title">
-                Latemar
-              </p><button class="elements__like"></button></div>
+                <p class="elements__title">Latemar</p>
+                <button class="elements__like"></button>
+              </div>
             </li>
             <li class="elements__card">
               <img
@@ -97,9 +98,9 @@
                 class="elements__image"
               />
               <div class="elements__description">
-              <p class="elements__title">
-                Vanois National Park
-              </p><button class="elements__like"></button></div>
+                <p class="elements__title">Vanois National Park</p>
+                <button class="elements__like"></button>
+              </div>
             </li>
             <li class="elements__card">
               <img
@@ -108,9 +109,9 @@
                 class="elements__image"
               />
               <div class="elements__description">
-              <p class="elements__title">
-                Lago di Braies
-              </p><button class="elements__like"></button></div>
+                <p class="elements__title">Lago di Braies</p>
+                <button class="elements__like"></button>
+              </div>
             </li>
           </ul>
         </section>
@@ -121,7 +122,12 @@
           <button class="popup__close">+</button>
           <form class="popup__form">
             <p class="popup__title">Editar perfil</p>
-            <input type="text" value="Jacques Cousteau" placeholder="Nombre" class="popup__name" />
+            <input
+              type="text"
+              value="Jacques Cousteau"
+              placeholder="Nombre"
+              class="popup__name"
+            />
             <input
               type="text"
               value="Explorador"
@@ -131,6 +137,25 @@
             <button type="submit" class="popup__save">Guardar</button>
           </form>
         </div>
+      </div>
+      <div class="popup-place">
+      <div class="popup-place__overlay"></div>
+        <div class="popup-place__content">
+          <button class="popup-place__close">+</button>
+          <form class="popup-place__form">
+            <p class="popup-place__title">Nuevo lugar</p>
+            <input
+              type="text"
+              placeholder="Titulo"
+              class="popup-place__name"
+            />
+            <input
+              type="url"
+              placeholder="Enlace a la imagen"
+              class="popup-place__link"
+            />
+            <button type="submit" class="popup__create">Crear</button>
+          </form>
       </div>
       <footer class="footer">
         <p class="footer__description">© 2025 Matias Yañez - Around The U.S.</p>
