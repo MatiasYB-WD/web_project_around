@@ -181,7 +181,9 @@
 }
 
 .popup__img {
-  position: absolute;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
   max-width: 880px;
   max-height: 540px;
   top: 50%;
@@ -191,8 +193,8 @@
 
 .popup-image__close {
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: -50px;
+  right: -40px;
   z-index: 1;
   background-color: transparent;
   border: none;

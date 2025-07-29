@@ -70,7 +70,6 @@ addButton.addEventListener("click", function (){
 }
 )
 
-
 function closePlacePopup(){
     popupPlace.classList.remove("popup-place__show");
 }
@@ -102,7 +101,7 @@ function createCard(name, link) {
     popupImage.src = link;
     popupImageContainer.classList.add("popup-image__show");
   } )
-console.log(popupImageContainer);
+
   cardTitle.textContent = name;
   cardImage.src = link;
   sectionCards.append(card);
