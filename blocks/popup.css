@@ -176,26 +176,32 @@
 
 .popup-image {
   display: none;
-  position: relative;
-  visibility: hidden;
-}
-
-.popup__img {
-  position: fixed;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup-image__content {
+  position: relative;
+
+}
+.popup__img {
+  
   max-width: 880px;
   max-height: 540px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .popup-image__close {
   position: absolute;
-  top: -50px;
+  top: -40px;
   right: -40px;
-  z-index: 1;
+  z-index: 3;
   background-color: transparent;
   border: none;
   font-size: 50px;
@@ -213,6 +219,11 @@
     min-width: 282px;
     min-height: 322px;
   }
+
+  .popup-place__content {
+    min-width: 282px;
+    min-height: 322px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -220,4 +231,5 @@
     top: -65px;
     right: 0;
   }
+
 }

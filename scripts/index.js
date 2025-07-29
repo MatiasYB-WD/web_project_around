@@ -76,6 +76,7 @@ function closePlacePopup(){
 
 popupClosePlaceButton.addEventListener("click", closePlacePopup);
 
+//iteracion de creacion de cartas
 initialCards.forEach(function(element) {
     createCard(element.name, element.link);
 } )
@@ -88,6 +89,7 @@ function createCard(name, link) {
   const likeButton = card.querySelector(".elements__like");
   const popupImage = document.querySelector(".popup__img");
   const popupImageContainer= document.querySelector(".popup-image");
+  const popupImageClose = document.querySelector(".popup-image__close");
 
   deleteCard.addEventListener("click", function() {
     card.remove();
@@ -102,6 +104,12 @@ function createCard(name, link) {
     popupImageContainer.classList.add("popup-image__show");
   } )
 
+  function closePopupImage () {
+    popupImageContainer.classList.remove("popup-image__show")
+  }
+
+  popupImageClose.addEventListener("click", closePopupImage);
+  
   cardTitle.textContent = name;
   cardImage.src = link;
   sectionCards.append(card);
