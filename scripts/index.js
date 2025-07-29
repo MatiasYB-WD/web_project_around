@@ -87,19 +87,22 @@ function createCard(name, link) {
   const cardImage = card.querySelector(".elements__image");
   const deleteCard = card.querySelector(".elements__trash");
   const likeButton = card.querySelector(".elements__like");
+  const popupImage = document.querySelector(".popup__img");
+  const popupImageContainer= document.querySelector(".popup-image");
 
   deleteCard.addEventListener("click", function() {
     card.remove();
   } )
 
   likeButton.addEventListener("click", function(){
-    likeButton.classList.add("elements__like-active")
+    likeButton.classList.toggle("elements__like-active")
   } )
 
-  //cardImage.addEventListener("click", function(){
-  //  cardImage
-  //} )
-
+  cardImage.addEventListener("click", function(){
+    popupImage.src = link;
+    popupImageContainer.classList.add("popup-image__show");
+  } )
+console.log(popupImageContainer);
   cardTitle.textContent = name;
   cardImage.src = link;
   sectionCards.append(card);
