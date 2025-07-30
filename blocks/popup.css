@@ -191,7 +191,6 @@
 
 }
 .popup__img {
-  
   max-width: 880px;
   max-height: 540px;
   z-index: 2;
@@ -214,6 +213,13 @@
   display: flex;
 }
 
+@media screen and (max-width: 920px) {
+  .popup__img {
+  max-width: 600px;
+  max-height: 500px;
+}
+}
+
 @media screen and (max-width: 620px) {
   .popup__content {
     min-width: 282px;
@@ -224,6 +230,11 @@
     min-width: 282px;
     min-height: 322px;
   }
+
+  .popup__img {
+  max-width: 300px;
+  max-height: 299px;
+}
 }
 
 @media screen and (max-width: 420px) {
@@ -231,5 +242,11 @@
     top: -65px;
     right: 0;
   }
+
+    .popup__img {
+  max-width: 280px;
+  max-height: 299px;
+}
+
 
 }
