@@ -73,15 +73,27 @@
               type="text"
               value="Jacques Cousteau"
               placeholder="Nombre"
-              class="popup__name"
+              class="popup__input text-error"
+              minlength="2"
+              maxlength="40"
+              required
             />
+            <div class="popup__name__validation">
+              <p class="popup__name__text text-error"></p>
+            </div>
             <input
               type="text"
               value="Explorador"
               placeholder="Acerca de Mi"
-              class="popup__input"
+              class="popup__input text-error"
+              minlength="2"
+              maxlength="200"
+              required
             />
-            <button type="submit" class="popup__save">Guardar</button>
+             <div class="popup__input__validation">
+              <p class="popup__input__text text-error"></p>
+            </div>
+            <button type="submit" class="popup-buton">Guardar</button>
           </form>
         </div>
       </div>
@@ -89,19 +101,25 @@
       <div class="popup-place__overlay"></div>
         <div class="popup-place__content">
           <button class="popup-place__close">+</button>
-          <form class="popup-place__form">
+          <form class="popup-place__form popup__form">
             <p class="popup-place__title">Nuevo lugar</p>
             <input
               type="text"
               placeholder="Titulo"
-              class="popup-place__name"
+              class="popup-place__name popup__input text error"
             />
+            <div class="popup-place__name__validation">
+              <p class="popup-place__name__text text-error"></p>
+            </div>
             <input
               type="url"
               placeholder="Enlace a la imagen"
-              class="popup-place__link"
+              class="popup-place__link popup__input text-error"
             />
-            <button type="submit" class="popup__create">Crear</button>
+             <div class="popup-place__link__validation">
+              <p class="popup-place__link__text text-error"></p>
+            </div>
+            <button type="submit" class="popup-buton">Crear</button>
           </form>
       </div>
      </div>
@@ -111,6 +129,8 @@
       <img class="popup__img">
       </div>
      </div>
-     <script src="scripts/index.js"></script>
+     
+     <script defer type="module" src="scripts/index.js"></script>
+     <script defer type="module" src="scripts/validation.js"></script>
     </body>
 </html>

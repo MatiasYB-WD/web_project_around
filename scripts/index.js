@@ -1,5 +1,5 @@
 //comentarios en js
-
+import {validationConfig, enableValidation} from "./validation.js";
 const button = document.querySelector(".profile__button");
 const popup = document.querySelector(".popup");
 const popupCloseButton = document.querySelector(".popup__close");
@@ -11,8 +11,6 @@ const popupInput = document.querySelector(".popup__input");
 const addButton = document.querySelector(".profile__add-button");
 const popupPlace = document.querySelector(".popup-place");
 const popupClosePlaceButton = document.querySelector(".popup-place__close");
-const popupPlaceName = document.querySelector(".popup-place__name");
-const popupPlaceLink = document.querySelector(".poppu-place__link");
 const templateCard = document.querySelector("#template-card");
 const sectionCards = document.querySelector(".elements");
 
@@ -114,3 +112,6 @@ function createCard(name, link) {
   cardImage.src = link;
   sectionCards.append(card);
 } 
+
+enableValidation(validationConfig);
+console.log(validationConfig);
