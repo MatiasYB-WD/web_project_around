@@ -6,7 +6,7 @@ const enableValidation = ({ formSelector, ...rest }) => {
         inputList.forEach(function(inputElement){
         inputElement.addEventListener("input", function(popupName){
             console.log(popupName.target.value);
-            const validationName = element.querySelector(".popup__name__text");
+            const validationName = element.querySelector(".popup__validation__text");
             console.log(popupName.target.validity.valid);
             console.log(popupName.target.validationMessage);
             validationName.textContent = popupName.target.validationMessage;

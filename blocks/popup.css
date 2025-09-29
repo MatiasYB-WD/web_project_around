@@ -60,9 +60,6 @@
   margin-top: 0;
   margin-bottom: 54px;
 }
-
-
-
 .text-error:valid {
   border-color: green;
 }
@@ -73,7 +70,6 @@
   font-family: Inter;
   font-weight: 400;
   font-size: 14px;
-  margin-top: 24px;
   margin-bottom: 48px;
   border: none;
   border-bottom: 1px solid #000000;
@@ -147,24 +143,6 @@
   color: #000000;
   margin-top: 0;
   margin-bottom: 54px;
-}
-
-.popup-place__name {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 14px;
-  margin-bottom: 29px;
-  border: none;
-  border-bottom: 1px solid #000000;
-}
-
-.popup-place__link {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 14px;
-  margin-bottom: 48px;
-  border: none;
-  border-bottom: 1px solid #000000;
 }
 
 .popup-image {
