@@ -73,9 +73,10 @@
               type="text"
               value="Jacques Cousteau"
               placeholder="Nombre"
-              class="popup__input text-error"
+              class="popup__input"
               minlength="2"
               maxlength="40"
+              id = "input__name"
               required
             />
             <div class="popup__validation">
@@ -85,15 +86,16 @@
               type="text"
               value="Explorador"
               placeholder="Acerca de Mi"
-              class="popup__input text-error"
+              class="popup__input"
               minlength="2"
               maxlength="200"
+              id = "input__text"
               required
             />
              <div class="popup__validation">
               <p class="popup__validation__text text-error"></p>
             </div>
-            <button type="submit" class="popup-buton">Guardar</button>
+            <button type="button" class="popup__buton" id="boton-1">Guardar</button>
           </form>
         </div>
       </div>
@@ -106,7 +108,11 @@
             <input
               type="text"
               placeholder="Titulo"
-              class="popup__input text error"
+              class="popup__input"
+              minlength="2"
+              maxlength="30"
+              id = "input__title"
+              required
             />
             <div class="popup__validation">
               <p class="popup__validation__text text-error"></p>
@@ -114,12 +120,14 @@
             <input
               type="url"
               placeholder="Enlace a la imagen"
-              class="popup__input text-error"
+              class="popup__input"
+              id ="input__link"
+              required
             />
              <div class="popup__validation">
               <p class="popup__validation__text text-error"></p>
             </div>
-            <button type="submit" class="popup-buton">Crear</button>
+            <button type="button" class="popup__buton" id="boton-2">Crear</button>
           </form>
       </div>
      </div>
@@ -131,6 +139,6 @@
      </div>
      
      <script defer type="module" src="scripts/index.js"></script>
-     <script defer type="module" src="scripts/validation.js"></script>
+     <script defer type="module" src="scripts/validate.js"></script>
     </body>
 </html>
